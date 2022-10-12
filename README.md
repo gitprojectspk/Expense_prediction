@@ -7,7 +7,7 @@ Proposed Approach:
 # A: Create and Pickle a Machine Learning Model
 
 I used Income_Expense dataset and created a model using LinearRegression model. This model will predict the expense of the person using income and age as input features.
-Please refer to https://bitbucket.org/pk_projects/work/src/week4/expense_prediction.ipynb 
+Please refer to https://github.com/gitprojectspk/Expense_prediction/blob/main/expense_prediction.ipynb
 
 This model performs below operations:
 ## Step 1 - Import data 
@@ -38,7 +38,7 @@ Model can then be pickled using
 pickle.dump(model, open('expense_prediction.pkl','wb'))
 
 ## The pickle file can be found inside the same directory as the Jupyter notebook.
-https://bitbucket.org/pk_projects/work/src/week4/expense_prediction.pkl
+https://github.com/gitprojectspk/Expense_prediction/blob/main/expense_prediction.pkl
 
 # C Write Flask App:
 
@@ -53,7 +53,7 @@ The structure of the code follows:
 The app file uses render_template function to load index.html
 Index.html is nothing but a user interface which accepts input variables for income and age and returns expense as output.
 This template can be found in
-https://bitbucket.org/pk_projects/work/src/week4/templates/index.html
+https://github.com/gitprojectspk/Expense_prediction/blob/main/templates/index.html
 
 app file further uses predict() function to predict the output.
 
